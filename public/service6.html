@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World's biggest University</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,100;1,200;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="eduford_img/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">मुख्यपृष्ठ</a></li>
+            <li><a href="#course">योजना</a></li>
+            <li><a href="ourteam.html">आमचे सहकारी</a></li>
+            <li><a href="blog.html">आमच्याविषयी</a></li>
+            <!-- <li><a href="#testimonial">नियमावली</a></li> -->
+            <li id="calculator">
+              <a href="calculator.html">ईएमआय कॅल्क्युलेटर</a>
+            </li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>आकास्मिक कर्ज</h1>
+    </section>
+
+    <div class="paraDiv">
+      <div class="course-cols">
+        <h2 id="manogat">आकस्मिक कर्ज</h2>
+        <p>
+          आकस्मिक कर्ज ज्यांचे वेतन ५०,०००/- पर्यंत असणाऱ्यांनी रु २५,०००/- व
+          ज्यांचे ५०,०००/- पेक्षा जादा वेतन आहे,अशांना मर्यादा रु. ५००००/-
+          पर्यन्त आकस्मिक कर्ज देता येईल.परतफेडीचे व्याजासह प्रत्यक्ष सेवाकाल १२
+          हप्ते कालावधीसाठी राहील.<br />
+          १)एकूण सर्व मिळून कर्जे ही देय पगाराच्या २५ पटी पेक्षा जास्त असणार
+          नाहीत. जर कर्ज कमाल मर्यादेपर्यंत मंजूर केले तर वसूल येणारा कर्जाचा
+          हप्ता, व्याज व वेतनातून एकूण करवायची कपात हि पेमेंट ऑफ वेजेस
+          अॅक्टप्रमाणे त्यांच्या वेतनाच्या २/३ पेक्षा जास्त असणार नाही. १०%
+          रक्कम त्यांची शेअर्स व संचित ठेव मिळून जमा करण्यात येईल<br />
+          २) व्यवस्थापक समितीला सभासदाच्या गरजेनुसार फेर कर्ज मंजूर करता
+          येईल.<br />
+          ३) ज्या सभासदांची संस्थेने ठरविल्याप्रमाणे संस्थेस येणे रक्कम
+          नियमितपणे येत नसेल,तर त्याला कर्ज मागणाच्या अधिकार नाही. त्याने
+          दरमहाची वर्गणी व इतर येणी केली पाहजेत.<br />
+          ४) कमीत कमी दोन सभासदांच्या वैयक्तिक जामिनकेवर कर्ज दिले पाहिजे. मात्र
+          एक सभासद दोन पेक्षा अधिक कर्जदारास जामिन राहता येत नाही.<br />
+          ५) आकस्मिक कर्ज मंजूर करण्याचा अधिकार संस्थेचे
+          अध्यक्ष/उपाध्यक्ष/सचिव-व्यवस्थापक यापैकी दोघांना संयुक्तपणे राहिल.
+          मात्र आशा कर्जास पुढील व्यवस्थापक समितीच्या सभेमध्ये मंजूरी घेतली
+          पाहिजे.<br />
+          ६) कर्जावरील व्याजाचा दर हा ११% राहील.<br />
+          ७) सभासदास एकावेळी दोन पेक्षा जास्त कर्ज घेता येणार नाही,असे ठरवून
+          ठराव कायम करणेत अला.
+        </p>
+      </div>
+    </div>
+
+    <!-- ---------------------Footer---------------------------------- -->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        सहकारी पथसंस्था मर्यादित ,सिंधुदुर्ग - ओरोस ,नजीक मुंबई-गोवा महामार्ग
+        ,रवळनाथ नगर,सावंतवाडा ,ता . कुडाळ ,जि . सिंधुदुर्ग
+        <br />फोन नं. 9561051421
+        <br />
+        ईमेल : arogyasocietyzpsindhudurg@gmail.com
+      </p>
+      <div class="icons"></div>
+      <p>Developed by @ Avinash And Saish</p>
+    </section>
+    <!-- ---------------------------Javascript for toggle Menu------------------- -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+    </script>
+  </body>
+</html>
